@@ -1,0 +1,5 @@
+#!/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv/bin/python3.10
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

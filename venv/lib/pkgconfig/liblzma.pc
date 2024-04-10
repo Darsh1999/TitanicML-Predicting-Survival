@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv
+exec_prefix=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv
+libdir=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv/lib
+includedir=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

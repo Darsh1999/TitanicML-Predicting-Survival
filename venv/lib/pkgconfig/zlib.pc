@@ -1,0 +1,13 @@
+prefix=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv
+exec_prefix=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv
+libdir=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv/lib
+sharedlibdir=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv/lib
+includedir=/Users/darshdave/Documents/Projects/TitanicML-Predicting-Survival/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
