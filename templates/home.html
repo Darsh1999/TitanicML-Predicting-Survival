@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Prediction</title>
+</head>
+<body>
+    <h1>Titanic Survival Prediction</h1>
+    <form method="post" action="/predict">
+        <label for="Pclass">Pclass:</label>
+        <input type="number" name="Pclass"><br>
+
+        <label for="Sex">Sex:</label>
+        <select name="Sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <label for="Age">Age:</label>
+        <input type="number" name="Age"><br>
+
+        <label for="SibSp">SibSp:</label>
+        <input type="number" name="SibSp"><br>
+
+        <label for="Parch">Parch:</label>
+        <input type="number" name="Parch"><br>
+
+        <label for="Fare">Fare:</label>
+        <input type="number" name="Fare"><br>
+
+        <label for="Embarked">Embarked:</label>
+        <select name="Embarked">
+            <option value=0.0>S</option>
+            <option value=1.0>C</option>
+            <option value=2.0>Q</option>
+        </select><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+    <h2>Prediction: {% if prediction == 1 %} Survived {% else %} Not Survived {% endif %}</h2>
+    {% endif %}
+</body>
+</html>
